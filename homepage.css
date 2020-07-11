@@ -66,7 +66,8 @@
 descripcion del proyecto pero, cuando cambio los elementos de una slide, todo el formato horizontal (de esa slide) se
 mueve. Tengo que dejar el mismo contenido en cada slide para que el formato horizontal de la página completa se respete.
 En pocas palabras tengo que lograr que el contenido de cada slide se ponga por encima de los contenedores "wrap" y "main-container"
-sin afectarlos.*/
+sin afectarlos. También solo puedo acomodar los elementos con top, bottom,  right, left y no c como hacerle para centrar con
+exactitud el slide-title. Creo que es por el position:absolute.*/
 
 .slide-content {
     position: absolute;
