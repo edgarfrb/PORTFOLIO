@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Delete scrollbars*/
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Secondary container */
+
+.wrap {
+	display:absolute;
+    width: 600vw;
+    height: 100vh;
+    margin: none;
+    overflow-x:scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+
+/* Slides */
+
+.slide {
+    display:inline-block;
+    margin-right: -4px;
+    width: 100vw;
+    height: 100vh;
+    position: static;
+}
+
+#one {
+    background: white;    
+}
+
+#two {
+    background: rgb(238, 238, 238);
+}
+
+#three {
+    background: white);
+}
+
+#four {
+    background: rgb(238, 238, 238);
+}
+
+#five {
+    background: white);
+}
+
+#six {
+    background: rgb(238, 238, 238);    
+}
+
+
+/* Slide content*/
+
+/*Tengo problemas acomodando el contenido dentro de cada slide. Por ejemplo: quiero que "homepage" no tenga imagen y
+descripcion del proyecto pero, cuando cambio los elementos de una slide, todo el formato horizontal (de esa slide) se
+mueve. Tengo que dejar el mismo contenido en cada slide para que el formato horizontal de la página completa se respete.
+En pocas palabras tengo que lograr que el contenido de cada slide se ponga por encima de los contenedores "wrap" y "main-container"
+sin afectarlos.*/
+
+.slide-content {
+    position: absolute;
+}
+
+.slide-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    position: absolute;
+    top: 35px;
+    left:650px;
+}
+
+.title-project {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: absolute;
+    top: 225px;
+    left:175px;
+}
+
+.desc-project {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    top: 275px;
+    left: 175px;
+}
+
+.img-project {
+    width: auto;
+    height: 200px;
+    position: absolute;
+    top: 225px;
+    right:250px;
+
+
+}
+
+
+/* Navbar */
+
+/* La Navbar (logo y menu) se ve bien bonito y todo hasta que veo la página en Responsive.
+Todas las slides se hacen pequeñas (mantienen el horizontal-scroll) y aparece un blank-space
+enorme abajo y la Navbar se fija en el fondo*/
+
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: auto;
+}
+
+
+/* Logo */
+
+.logo {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    z-index: 3;
+}
+
+
+/* Dropup container */
+
+.dropup {
+    position: fixed;
+    display: inline-block;
+    bottom: 25px;
+    right: 50px;
+    z-index: 3;
+}
+
+
+/* Dropup Button */
+
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    padding: 15px;
+    font-size: 20PX;
+    font-weight: 400;
+    border: none;
+}
+
+
+/* Dropup content */
+
+.dropup-content {
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 300px;
+    height: auto;
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+
+/* Links inside the dropup */
+
+.dropup-content a {
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropup links on hover */
+
+.dropup-content a:hover {
+    background-color: #ddd
+}
+
+
+/* Show the dropup menu on hover */
+
+.dropup:hover .dropup-content {
+    display: block;
+}
+
+
+/* Change the background color of the dropup button when the dropup content is shown */
+
+.dropup:hover .dropbtn {
+    background-color: black;
+    color: white;
+}
